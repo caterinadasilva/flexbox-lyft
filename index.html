@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>Lyft</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name="description" content="Desarrollo de proyecto final del tercer sprint.">
+	<meta name="author" content="Caterina Da Silva">
+	<link href="https://fonts.googleapis.com/css?family=Raleway:300,400,700" rel="stylesheet">
+	<link rel="stylesheet" type="text/css" href="assets/css/font-awesome.min.css">
+	<link rel="stylesheet" type="text/css" href="assets/css/common.css">
+	<link rel="stylesheet" type="text/css" href="assets/css/main.css">
+	<link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png">
+	<link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
+	<link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png">
+	<link rel="manifest" href="manifest.json">
+	<meta name="theme-color" content="#ffffff">
+	<script type="text/javascript">
+		window.onload = function() {
+			validateForm();
+			game();
+		}
+	</script>
+</head>
+<header>
+	<div class="container">
+		<div class="logo"></div>
+		<nav>
+			<ul>
+				<li><a href="#drive" title="Drive">Drive</a></li>
+				<li><a href="#explore" title="Explore">Explore</a></li>
+				<li><a href="#help" title="Help">Help</a></li>
+			</ul>
+		</nav>
+	</div>
+</header>
+<section id="hero">
+	<div class="box">
+		<h3>Turn miles into money</h3>
+		<p>Sign up to drive Lyft</p>
+		<div class="driver-number">
+			<input type="number" name="driver-number" id="driverNumber" value="" placeholder="Phone Number" tabindex="1" />
+		</div>
+		<div>
+			<button class="btn" id="driverBtn" tabindex="2">Become a driver <i class="fa fa-heart" aria-hidden="true"></i></button>
+		</div>
+		<span>Already applied? Check the status of your application <a href="#">here</a>.</span>
+		<span>Earn money for inviting friends to drive. <a href="#">Learn more</a>.</span>
+	</div>
+</section>
+<section id="play">
+	<h2>Play with Lyft</h2>
+	<div class="container">
+		<div id="game" class="start">
+			<form action="#" method="post">
+				<div class="coordinate aleft">
+					<i class="fa fa-car" aria-hidden="true"></i>
+					<input type="number" name="x-coordinate" id="xCoordinate" placeholder="X Coordinate" value="" maxlength="1" tabindex="3" />
+				</div>
+				<div class="coordinate aright">
+					<i class="fa fa-car" aria-hidden="true"></i>
+					<input type="number" name="y-coordinate" id="yCoordinate" placeholder="Y Coordinate" value="" maxlength="1" tabindex="4" />
+				</div>
+				<div>
+					<button class="btn" id="startBtn" tabindex="5">Start</button>
+				</div>
+			</form>
+			<div id="map"></div>
+		</div>
+	</div>
+</section>
+<footer>
+	<section class="top">
+		<div class="container">
+			<div class="left">
+				<h3><b>Lyft</b> A ride whenever you need one</h3>
+				<p>Lyft is a transportation network company based in San Francisco, California. It develops, markets and operates the Lyft car transportation mobile app.</p>
+			</div>
+			<div class="right">
+				<h3>Contact us!</h3>
+				<ul>
+					<li><a href="https://www.facebook.com/lyft/" title="Link1"><i class="fa fa-facebook" aria-hidden="true"></i> Facebook</a></li>
+					<li><a href="https://twitter.com/asklyft" title="Link2"><i class="fa fa-twitter" aria-hidden="true"></i> Twitter</a></li>
+					<li><a href="https://plus.google.com/+lyft" title="Link3"><i class="fa fa-google-plus" aria-hidden="true"></i> Google+</a></li>
+					<li><a href="https://www.instagram.com/lyft/" title="Link4"><i class="fa fa-instagram" aria-hidden="true"></i> Instagram</a></li>
+				</ul>
+			</div>
+		</div>
+	</section>
+	<section class="bottom">
+		<div class="container">
+			<small class="left">&copy; 2017 Lyft & Laboratoria Inc.</small>
+			<small class="right">Desarrollado por <a href="https://github.com/caterinadasilva/lyft-sprint-3">Caterina Da Silva</a></small>
+		</div>
+	</section>
+</footer>
+<body>
+	<script type="text/javascript" src="assets/js/main.js"></script>
+</body>
+</html>

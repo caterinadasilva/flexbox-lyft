@@ -1,0 +1,420 @@
+/*
+Colors: 
+#E54E79;
+#E56385;
+#00B2A9;
+#75726C;
+#EDE9E2
+*/
+/* http://meyerweb.com/eric/tools/css/reset/
+v2.0 | 20110126
+License: none (public domain)
+*/
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+margin: 0;
+padding: 0;
+border: 0;
+font-size: 100%;
+font: inherit;
+vertical-align: baseline;
+box-sizing: border-box;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+display: block;
+}
+body {
+line-height: 1;
+font-family: 'Raleway', Helvetica, Arial, sans-serif;
+background-color: #EDE9E2;
+font-weight: 300;
+}
+ol, ul {
+list-style: none;
+}
+blockquote, q {
+quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+content: '';
+content: none;
+}
+table {
+border-collapse: collapse;
+border-spacing: 0;
+}
+
+/* ESTILOS BÁSICOS */
+.container {
+display: block;
+width: 95%;
+max-width: 960px;
+margin: 0 auto;
+}
+header {
+background-color: #E54E79;
+color: white;
+text-align: center;
+overflow: hidden;
+position: fixed;
+top: 0;
+display: block;
+z-index: 1;
+width: 100%;
+height: 60px;
+}
+nav{
+float: right;
+clear: right;
+}
+header ul {
+overflow: hidden;
+}
+nav ul li {
+display: table;
+height: initial;
+text-align: right;
+float: left;
+}
+nav ul li a {
+vertical-align: middle;
+display: table-cell;
+text-decoration: none;
+color: white;
+font-size: 90%;
+height: 60px;
+padding: 0 1em;
+}
+nav ul li a:hover, nav ul li a:focus, nav ul li a:active {
+color: white;
+background: #D22B5B;
+}
+h1, h2, h3, h4, h5, h6 {
+font-family: 'Raleway', Helvetica, Arial, sans-serif;
+font-weight: 700;
+text-transform: uppercase;
+}
+h1 {
+font-size: 3.5rem;
+}
+h2 {
+font-size: 3rem;
+}
+h3 {
+font-size: 1.8rem;
+}
+h4 {
+font-size: 1.5rem;
+}
+a {
+font-weight: 300;
+color: #00B2A9;
+transition: .5s ease all;
+}
+a:hover, a:focus, a:active {
+color: #E54E79;
+transition: .5s ease all;
+}
+p {
+font-family: 'Raleway', Helvetica, Arial, sans-serif;
+display: block;
+margin: 1em 0;
+line-height: 1.4;
+}
+b {
+font-weight: 700;
+color: #E54E79;
+}
+small {
+font-size: .8rem;
+}
+footer {
+display: block;
+width: 100%;
+overflow: hidden;
+background-color: #75726C; 
+color: #EDE9E2;
+}
+form {
+font-size: 85%;
+}
+label {
+display: block;
+font-weight: 700;
+color: #6730EC;
+margin: 1.2em 0 .5em;
+float: left;
+}
+input, select {
+width: 85%;
+border: none;
+border-bottom: 1px solid #75726C;
+line-height: 130%;
+padding: 1%;
+transition: .5s ease all;
+background: none;
+display: inline-block;
+margin-left: 2%;
+font-size: 2rem;
+font-family: 'Raleway', Helvetica, Arial, sans-serif;
+}
+input::placeholder {
+color: #D1CEC7;
+font-weight: 300;
+}
+.logo {
+background-image: url('../img/logo-white.png');	
+float: left;
+width: 60px;
+height: 45px;
+background-size: contain;
+background-repeat: no-repeat;
+clear: left;
+margin: 8px 0 0;
+}
+.lead {
+max-width: 660px;
+margin: 2em auto 1em;
+font-size: 120%;
+}
+.btn {
+display: inline-block;
+text-align: center;
+cursor: pointer;
+color: white;
+background-color: #E56385;
+letter-spacing: 1px;
+font-size: 90%;
+padding: 1em 1.5em;
+transition: .5s ease all;
+margin: 2em auto 0;
+border: none;
+text-transform: uppercase;
+font-weight: 300;
+border-radius: 10px;
+font-size: 85%;
+box-shadow: 0 3px 5px rgba(117, 114, 108, 0.5);
+font-family: 'Raleway', Helvetica, Arial, sans-serif;
+}
+.btn:hover, .btn:active, .btn:focus {
+background-color: #E54E79;
+transition: .5s ease all;
+box-shadow: 0 5px 5px rgba(117, 114, 108, 0.5);
+}
+.aleft {
+float: left;
+}
+.aright {
+float: right;
+}
+/*INPUT CHECK*/
+input[type|=check] {
+display: inline-block;
+width: auto;
+}
+label[for|=check] {
+font-family: 'Raleway', Helvetica, Arial, sans-serif;
+font-weight: normal;
+display: inline-block;
+}
+/* INPUT NUMBER SIN FLECHAS */
+input[type=number]::-webkit-inner-spin-button, 
+input[type=number]::-webkit-outer-spin-button { 
+-webkit-appearance: none; 
+margin: 0; 
+}
+
+/* Específicos */
+#hero {
+overflow: hidden;
+height: 100vh;
+width: 100%;
+background-image: url(../img/cropped-Lyft-Promo-Codes-car-1.jpg);
+background-size: cover;
+position: relative;
+background-attachment: fixed;
+background-repeat: no-repeat;
+background-position: center;
+}
+#hero .box {
+position: absolute;
+max-width: 500px;
+top: 35vh;
+right: 0;
+background-color: #EDE9E2;
+padding: 4em 3.5em 4em 3em;
+text-align: left;
+width: 100%;
+}
+#hero h3 {
+color: #00B2A9;
+}
+#hero p {
+text-transform: uppercase;
+font-size: 90%;
+color: #75726C;
+margin: 1.5em 0;
+}
+#hero .box span {
+display: block;
+font-size: 90%;
+margin-top: 1.5em;
+font-weight: 400;
+}
+#hero input {
+margin: 0;
+font-size: 100%;
+}
+#play {
+background-color: #00B2A9;
+width: 100%;
+text-align: center;
+padding: 5em 0 2em;
+}
+#play h2 {
+width: 100%;
+background-color: #EDE9E2;
+padding: .5em 0;
+color: #75726C;
+}
+#game {
+margin: 5em 0 1em;
+background: #EDE9E2;
+padding: 4.5em 3em;
+}
+#game .coordinate {
+width: 48%;
+position: relative;
+}
+#game .coordinate i.fa {
+display: inline;
+font-size: 2rem;
+color: #75726C;
+}
+#game #startBtn.btn {
+font-size: 120%;
+background-color: #00B2A9;
+width: 100%;
+}
+#game #startBtn.btn:hover {
+background-color: #008883;
+}
+footer > * {
+overflow: hidden;
+}
+footer h3 {
+font-weight: 400;
+text-transform: none;
+font-size: 1rem;
+line-height: 2rem;
+margin-left: 30px;
+}
+footer b {
+font-size: 3rem;
+text-transform: lowercase;
+display: block;
+margin-left: -30px;
+}
+footer .top {
+padding: 2em 0;
+}
+footer .bottom {
+background-color: #706D68;
+padding: 1em 0;
+}
+footer .left {
+float: left;
+clear: left;
+display: block;
+width: 49%;
+}
+footer .right {
+float: right;
+clear: right;
+width: 49%;
+display: block;
+}
+footer .top .right > * {
+margin: 0 0 0 25%;
+}
+footer .bottom .right {
+text-align: right;
+}
+footer ul li {
+margin: .5em 0;
+}
+footer a {
+text-decoration: none;
+color: #fff;
+}
+footer .fa {
+width: 25px;
+}
+
+/* GAME */
+.fila {
+width: 100%;
+}
+.casilla{
+box-sizing: border-box;
+display: inline-block;
+background-color: #75726C;
+color: #75726C;
+padding: 0;
+font-family: sans-serif;
+max-width: 60px;
+height: 60px;
+text-align: center;
+width: 10%;
+vertical-align: text-top;
+}
+.casilla .recorrido {
+width: 60px;
+height: 60px;
+background-color: #E54E79;
+}
+.casilla .recorrido img {
+width: auto;
+height: 100%;
+max-height: 50px;
+margin: 5px;
+}
+/* Código original de Ricardo Silva */ 
+#map {
+background: #75726C;
+width: 100%;
+overflow: hidden;
+}
+.cell {
+border: none;
+float: left;
+width: 10%;
+height: 60px;
+}
+.active {
+background-color: #E54E79;
+}
+.robot {
+background-color: #E54E79;
+background-image: url('../img/car.png');
+background-size: contain;
+background-repeat: no-repeat;
+background-position: center;
+}
+.clearfix {
+clear: both;
+}
